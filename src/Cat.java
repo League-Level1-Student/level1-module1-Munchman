@@ -34,16 +34,7 @@ public class Cat {
 			System.out.println("DEAD CAT :(");
 	}
 
-	public static void main(String[] args) {
-		/* Do the following things without changing the Cat class */
-
-		// 1. Make the Cat meow
-		
-		// 2. Get the Cat to print it's name
-
-		// 3. Kill the Cat!
-
-	}
+	
 }
 
 

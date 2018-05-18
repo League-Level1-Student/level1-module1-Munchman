@@ -32,7 +32,7 @@ public class SeaCreature {
 	public void laugh() {
 		try {
 			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(
-					"/Users/League/Google Drive/league-sounds/" + this.name + ".wav").toURI().toURL());
+					"/home/leaguestudent/Downloads/league-sounds-master/" + this.name + ".wav").toURI().toURL());
 			Clip clip = AudioSystem.getClip();
 			clip.open(audioInputStream);
 			clip.start();

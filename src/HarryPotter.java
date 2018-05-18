@@ -29,13 +29,7 @@ System.out.println("casting spell: " + spell);
 		System.out.println("Harry sees Professor Snape doing nefarious things.");
 	}
 
-	public static void main(String[] args) {
-		// 1. make harry potter
-		// 2. become invisible
-		// 3. spy on professor snape
-		// 4. become visible again
-		// 5. cast a “stupefy” spell
-	}
+	
 
 }
 

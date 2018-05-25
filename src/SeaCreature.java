@@ -8,10 +8,12 @@
  * 2. Make Patrick and Squidward and print their name, have them eat, and make them laugh.
  */
 
+import java.applet.AudioClip;
 import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.swing.JApplet;
 
 public class SeaCreature {
 
@@ -31,15 +33,13 @@ public class SeaCreature {
 
 	public void laugh() {
 		try {
-			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(
-					"/home/leaguestudent/Downloads/league-sounds-master/" + this.name + ".wav").toURI().toURL());
-			Clip clip = AudioSystem.getClip();
-			clip.open(audioInputStream);
-			clip.start();
+			AudioClip sound = JApplet.newAudioClip(getClass().getResource(name +".wav"));
+			sound.play();
 			Thread.sleep(3400);
 		} catch (Exception ex) {
 			ex.printStackTrace();
-		}
+}
+	}
 	}
 
-}
+

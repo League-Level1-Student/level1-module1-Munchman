@@ -1,7 +1,7 @@
 
 public class MakeSeaCreature {
 public static void main(String[] args) {
-	SeaCreature sponge = new SeaCreature("sponge bob");
+	SeaCreature sponge = new SeaCreature("spongebob");
 	SeaCreature squid = new SeaCreature("squidward");
 	SeaCreature star = new SeaCreature("patrick");
 	

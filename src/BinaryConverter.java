@@ -41,7 +41,7 @@ public class BinaryConverter implements ActionListener {
 		}
 		try {
 			int asciiValue = Integer.parseInt(input, 2);
-			char theLetter = (char) asciiValue;
+			int theLetter = asciiValue;
 			return "" + theLetter;
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "Enter a binary, silly!!!");
@@ -58,6 +58,6 @@ public class BinaryConverter implements ActionListener {
 		// TODO Auto-generated method stub
 		String binary = textthing.getText();
 		String decimal = convert(binary);
-		label.setText("this is what you wrote!!!"+decimal);
+		label.setText("this is what you wrote!!!  "+decimal);
 	}
 }
